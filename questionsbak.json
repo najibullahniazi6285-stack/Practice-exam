@@ -1,0 +1,943 @@
+[
+  {
+    "question": "A company has hired a third-party to gather information about the company’s servers and data. This third-party will not have direct access to the company's internal network, but they can gather information from any other source. Which of the following would BEST describe this approach?",
+    "answers": [
+      { "text": "Vulnerability scanning", "correct": false },
+      { "text": "Passive reconnaissance", "correct": true },
+      { "text": "Supply chain analysis", "correct": false },
+      { "text": "Regulatory audit", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A6, Page 43",
+    "details": "Passive reconnaissance gathers information from open sources like social media and websites without direct access to internal systems."
+  },
+  {
+    "question": "A company's email server has received an email from a third-party, but the origination server does not match the list of authorized devices. Which of the following would determine the disposition of this message?",
+    "answers": [
+      { "text": "SPF", "correct": false },
+      { "text": "NAC", "correct": false },
+      { "text": "DMARC", "correct": true },
+      { "text": "DKIM", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A7, Page 44",
+    "details": "DMARC specifies how to handle unauthenticated emails, including whether to accept, reject, or quarantine them."
+  },
+  {
+    "question": "Which of these threat actors would be MOST likely to attack systems for direct financial gain?",
+    "answers": [
+      { "text": "Organized crime", "correct": true },
+      { "text": "Hacktivist", "correct": false },
+      { "text": "Nation state", "correct": false },
+      { "text": "Shadow IT", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A8, Page 45",
+    "details": "Organized crime groups are motivated by financial gain and often target systems for monetary exploitation."
+  },
+  {
+    "question": "A security administrator has examined a server recently compromised by an attacker, and has determined the system was exploited due to a known operating system vulnerability. Which of the following would BEST describe this finding?",
+    "answers": [
+      { "text": "Root cause analysis", "correct": true },
+      { "text": "E-discovery", "correct": false },
+      { "text": "Risk appetite", "correct": false },
+      { "text": "Data subject", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A9, Page 46",
+    "details": "Root cause analysis identifies the underlying reason for a security incident, helping prevent future occurrences."
+  },
+  {
+    "question": "A city is building an ambulance service network for emergency medical dispatching. Which of the following should have the highest priority?",
+    "answers": [
+      { "text": "Integration costs", "correct": false },
+      { "text": "Patch availability", "correct": false },
+      { "text": "System availability", "correct": true },
+      { "text": "Power usage", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A10, Page 47",
+    "details": "System availability is critical for emergency services to ensure uninterrupted access to dispatch systems."
+  },
+  {
+    "question": "A system administrator receives a text alert when access rights are changed on a database containing private customer information. Which of the following would describe this alert?",
+    "answers": [
+      { "text": "Maintenance window", "correct": false },
+      { "text": "Attestation and acknowledgment", "correct": false },
+      { "text": "Automation", "correct": true },
+      { "text": "External audit", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A11, Page 48",
+    "details": "Automation allows for real-time alerts and responses to system changes, improving security monitoring."
+  },
+  {
+    "question": "A security administrator is concerned about the potential for data exfiltration using external storage drives. Which of the following would be the BEST way to prevent this method of data exfiltration?",
+    "answers": [
+      { "text": "Create an operating system security policy to block the use of removable media", "correct": true },
+      { "text": "Monitor removable media usage in host-based firewall logs", "correct": false },
+      { "text": "Only allow applications that do not use removable media", "correct": false },
+      { "text": "Define a removable media block rule in the UTM", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A12, Page 49",
+    "details": "Blocking removable media at the OS level is the most effective way to prevent unauthorized data transfers."
+  },
+  {
+    "question": "A company creates a standard set of government reports each calendar quarter. Which of the following would describe this type of data?",
+    "answers": [
+      { "text": "Data in use", "correct": false },
+      { "text": "Obfuscated", "correct": false },
+      { "text": "Trade secrets", "correct": false },
+      { "text": "Regulated", "correct": true }
+    ],
+    "reference": "Practice Exam A, Question A13, Page 50",
+    "details": "Government reports often contain regulated data that must comply with legal and compliance standards."
+  },
+  {
+    "question": "An insurance company has created a set of policies to handle data breaches. The security team has been given this set of requirements based on these policies. Which of the following should be implemented by the security team to meet these requirements? (Select THREE)",
+    "answers": [
+      { "text": "Restrict login access by IP address and GPS location", "correct": true },
+      { "text": "Require government-issued identification during the onboarding process", "correct": false },
+      { "text": "Add additional password complexity for accounts that access data", "correct": false },
+      { "text": "Conduct monthly permission auditing", "correct": true },
+      { "text": "Consolidate all logs on a SIEM", "correct": true },
+      { "text": "Archive the encryption keys of all disabled accounts", "correct": false },
+      { "text": "Enable time-of-day restrictions on the authentication server", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A14, Page 51",
+    "details": "IP/GPS restrictions, permission auditing, and centralized logging via SIEM help enforce breach response policies."
+  },
+  {
+    "question": "A security engineer is viewing this record from the firewall logs: UTC 04/05/2023 03:09:15809 AV Gateway Alert 136.127.92.171 80 -> 10.16.10.14 60818 Gateway Anti-Virus Alert: XPACK.A_7854 (Trojan) blocked. Which of the following can be observed from this log information?",
+    "answers": [
+      { "text": "The victim's IP address is 136.127.92.171", "correct": false },
+      { "text": "A download was blocked from a web server", "correct": true },
+      { "text": "A botnet DDoS attack was blocked", "correct": false },
+      { "text": "The Trojan was blocked, but the file was not", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A15, Page 53",
+    "details": "The log shows a Trojan download attempt from a web server that was successfully blocked."
+  },
+  {
+    "question": "A user connects to a third-party website and receives this message: Your connection is not private. NET::ERR_CERT_INVALID. Which of the following attacks would be the MOST likely reason for this message?",
+    "answers": [
+      { "text": "Brute force", "correct": false },
+      { "text": "DoS", "correct": false },
+      { "text": "On-path", "correct": true },
+      { "text": "Deauthentication", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A16, Page 54",
+    "details": "An invalid certificate warning often indicates a potential on-path (man-in-the-middle) attack."
+  },
+  {
+    "question": "Which of the following would be the BEST way to provide a website login using existing credentials from a third-party site?",
+    "answers": [
+      { "text": "Federation", "correct": true },
+      { "text": "802.1X", "correct": false },
+      { "text": "EAP", "correct": false },
+      { "text": "SSO", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A17, Page 55",
+    "details": "Federation allows users to authenticate using credentials from a third-party identity provider."
+  },
+  {
+    "question": "A system administrator is working on a contract that will specify a minimum required uptime for a set of Internet facing firewalls. The administrator needs to know how often the firewall hardware is expected to fail between repairs. Which of the following would BEST describe this information?",
+    "answers": [
+      { "text": "MTBF", "correct": true },
+      { "text": "RTO", "correct": false },
+      { "text": "MTTR", "correct": false },
+      { "text": "RPO", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A18, Page 56",
+    "details": "MTBF (Mean Time Between Failures) estimates how long hardware will operate before failing."
+  },
+  {
+    "question": "An attacker calls into a company’s help desk and pretends to be the director of the company’s manufacturing department. The attacker states that they have forgotten their password and they need to have the password reset quickly for an important meeting. What kind of attack would BEST describe this phone call?",
+    "answers": [
+      { "text": "Social engineering", "correct": true },
+      { "text": "Supply chain", "correct": false },
+      { "text": "Watering hole", "correct": false },
+      { "text": "On-path", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A19, Page 57",
+    "details": "This is a classic example of social engineering — manipulating people to gain unauthorized access."
+  },
+  {
+    "question": "Two companies have been working together for a number of months, and they would now like to qualify their partnership with a broad formal agreement between both organizations. Which of the following would describe this agreement?",
+    "answers": [
+      { "text": "SLA", "correct": false },
+      { "text": "SOW", "correct": false },
+      { "text": "MOA", "correct": true },
+      { "text": "NDA", "correct": false }
+    ],
+    "reference": "Practice Exam A, Question A20, Page 58",
+    "details": "A Memorandum of Agreement (MOA) formalizes collaboration between organizations."
+  },
+  {
+  "question": "Which of the following would explain why a company would automatically add a digital signature to each outgoing email message?",
+  "answers": [
+    { "text": "Confidentiality", "correct": false },
+    { "text": "Integrity", "correct": true },
+    { "text": "Authentication", "correct": false },
+    { "text": "Availability", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A21, Page 59",
+  "details": "Digital signatures ensure the integrity of the message by verifying it hasn't been altered in transit."
+},
+{
+  "question": "The embedded OS in a company’s time clock appliance is configured to reset the file system and reboot when a file system error occurs. On one of the time clocks, this file system error occurs during the startup process and causes the system to constantly reboot. Which of the following BEST describes this issue?",
+  "answers": [
+    { "text": "Memory injection", "correct": false },
+    { "text": "Resource consumption", "correct": false },
+    { "text": "Race condition", "correct": true },
+    { "text": "Malicious update", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A22, Page 60",
+  "details": "A race condition occurs when the timing of events causes unexpected behavior, such as repeated reboots."
+},
+{
+  "question": "A recent audit has found that existing password policies do not include any restrictions on password attempts, and users are not required to periodically change their passwords. Which of the following would correct these policy issues? (Select TWO)",
+  "answers": [
+    { "text": "Password complexity", "correct": false },
+    { "text": "Password expiration", "correct": true },
+    { "text": "Password reuse", "correct": false },
+    { "text": "Account lockout", "correct": true },
+    { "text": "Password managers", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A23, Page 61",
+  "details": "Password expiration and account lockout policies help enforce secure password practices and prevent brute force attacks."
+},
+{
+  "question": "What kind of security control is associated with a login banner?",
+  "answers": [
+    { "text": "Preventive", "correct": false },
+    { "text": "Deterrent", "correct": false },
+    { "text": "Corrective", "correct": false },
+    { "text": "Detective", "correct": false },
+    { "text": "Compensating", "correct": false },
+    { "text": "Directive", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A24, Page 62",
+  "details": "Login banners are directive controls that inform users of policies and acceptable use before access."
+},
+{
+  "question": "An internal audit has discovered four servers that have not been updated in over a year, and it will take two weeks to test and deploy the latest patches. Which of the following would be the best way to quickly respond to this situation in the meantime?",
+  "answers": [
+    { "text": "Purchase cybersecurity insurance", "correct": false },
+    { "text": "Implement an exception for all data center services", "correct": false },
+    { "text": "Move the servers to a protected segment", "correct": true },
+    { "text": "Hire a third-party to perform an extensive audit", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A25, Page 63",
+  "details": "Segmenting vulnerable servers reduces exposure while patches are being tested and deployed."
+},
+{
+  "question": "A business manager is documenting a set of steps for processing orders if the primary Internet connection fails. Which of these would BEST describe these steps?",
+  "answers": [
+    { "text": "Platform diversity", "correct": false },
+    { "text": "Continuity of operations", "correct": true },
+    { "text": "Cold site recovery", "correct": false },
+    { "text": "Tabletop exercise", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A26, Page 64",
+  "details": "Continuity of operations planning ensures business processes can continue during and after disruptions."
+},
+{
+  "question": "A company would like to examine the credentials of each individual entering the data center building. Which of the following would BEST facilitate this requirement?",
+  "answers": [
+    { "text": "Access control vestibule", "correct": true },
+    { "text": "Video surveillance", "correct": false },
+    { "text": "Pressure sensors", "correct": false },
+    { "text": "Bollards", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A27, Page 65",
+  "details": "Access control vestibules allow for secure identity verification before granting physical access."
+},
+{
+  "question": "A company stores some employee information in encrypted form, but other public details are stored as plaintext. Which of the following would BEST describe this encryption strategy?",
+  "answers": [
+    { "text": "Full-disk", "correct": false },
+    { "text": "Record", "correct": true },
+    { "text": "Asymmetric", "correct": false },
+    { "text": "Key escrow", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A28, Page 66",
+  "details": "Record-level encryption allows selective protection of sensitive fields while leaving others accessible."
+},
+{
+  "question": "A company would like to minimize database corruption if power is lost to a server. Which of the following would be the BEST strategy to follow?",
+  "answers": [
+    { "text": "Encryption", "correct": false },
+    { "text": "Off-site backups", "correct": false },
+    { "text": "Journaling", "correct": true },
+    { "text": "Replication", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A29, Page 67",
+  "details": "Journaling helps preserve database integrity by recording changes before they are committed."
+},
+{
+  "question": "A company is creating a security policy for corporate mobile devices: All mobile devices must be automatically locked after a predefined time period. The location of each device needs to be traceable. All of the user’s information should be completely separate from company data. Which of the following would be the BEST way to establish these security policy rules?",
+  "answers": [
+    { "text": "Segmentation", "correct": false },
+    { "text": "Biometrics", "correct": false },
+    { "text": "COPE", "correct": false },
+    { "text": "MDM", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A30, Page 68",
+  "details": "Mobile Device Management (MDM) enforces security policies, location tracking, and data separation on mobile devices."
+},
+{
+  "question": "A security engineer runs a monthly vulnerability scan. The scan doesn’t list any vulnerabilities for Windows servers, but a significant vulnerability was announced last week and none of the servers are patched yet. Which of the following best describes this result?",
+  "answers": [
+    { "text": "Exploit", "correct": false },
+    { "text": "Compensating controls", "correct": false },
+    { "text": "Zero-day attack", "correct": false },
+    { "text": "False negative", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A31, Page 69",
+  "details": "A false negative occurs when a scan fails to detect a known vulnerability that is present."
+},
+{
+  "question": "An IT help desk is using automation to improve the response time for security events. Which of the following use cases would apply to this process?",
+  "answers": [
+    { "text": "Escalation", "correct": true },
+    { "text": "Guard rails", "correct": false },
+    { "text": "Continuous integration", "correct": false },
+    { "text": "Resource provisioning", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A32, Page 70",
+  "details": "Automation helps escalate security events quickly to the appropriate personnel or systems."
+},
+{
+  "question": "A network administrator would like each user to authenticate with their corporate username and password when connecting to the company's wireless network. Which of the following should the network administrator configure on the wireless access points?",
+  "answers": [
+    { "text": "WPA3", "correct": false },
+    { "text": "802.1X", "correct": true },
+    { "text": "PSK", "correct": false },
+    { "text": "MFA", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A33, Page 71",
+  "details": "802.1X enables enterprise-level authentication using usernames and passwords for wireless access."
+},
+{
+  "question": "A company's VPN service performs a posture assessment during the login process. Which of the following mitigation techniques would this describe?",
+  "answers": [
+    { "text": "Encryption", "correct": false },
+    { "text": "Decommissioning", "correct": false },
+    { "text": "Least privilege", "correct": false },
+    { "text": "Configuration enforcement", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A34, Page 72",
+  "details": "Posture assessments verify device configurations before granting access, enforcing security policies."
+},
+{
+  "question": "A user has assigned individual rights and permissions to a file on their network drive. The user adds three additional individuals to have read-only access to the file. Which of the following would describe this access control model?",
+  "answers": [
+    { "text": "Discretionary", "correct": true },
+    { "text": "Mandatory", "correct": false },
+    { "text": "Attribute-based", "correct": false },
+    { "text": "Role-based", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A35, Page 73",
+  "details": "Discretionary access control allows the owner to decide who has access and what type of access."
+},
+{
+  "question": "A remote user has received a text message with a link to login and confirm their upcoming work schedule. Which of the following would BEST describe this attack?",
+  "answers": [
+    { "text": "Brute force", "correct": false },
+    { "text": "Watering hole", "correct": false },
+    { "text": "Typosquatting", "correct": false },
+    { "text": "Smishing", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A36, Page 74",
+  "details": "Smishing is phishing via SMS, tricking users into clicking malicious links sent by text."
+},
+{
+  "question": "A company is formalizing the design and deployment process used by their application programmers. Which of the following policies would apply?",
+  "answers": [
+    { "text": "Business continuity", "correct": false },
+    { "text": "Acceptable use policy", "correct": false },
+    { "text": "Incident response", "correct": false },
+    { "text": "Development lifecycle", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A37, Page 75",
+  "details": "Development lifecycle policies define how software is designed, tested, and deployed securely."
+},
+{
+  "question": "A security administrator has copied a suspected malware executable from a user's computer and is running the program in a sandbox. Which of the following would describe this part of the incident response process?",
+  "answers": [
+    { "text": "Eradication", "correct": false },
+    { "text": "Preparation", "correct": false },
+    { "text": "Recovery", "correct": false },
+    { "text": "Containment", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A38, Page 76",
+  "details": "Running malware in a sandbox isolates it for analysis, which is part of containment."
+},
+{
+  "question": "A server administrator at a bank has noticed a decrease in the number of visitors to the bank's website. Additional research shows that users are being directed to a different IP address than the bank's web server. Which of the following would MOST likely describe this attack?",
+  "answers": [
+    { "text": "Deauthentication", "correct": false },
+    { "text": "DDoS", "correct": false },
+    { "text": "Buffer overflow", "correct": false },
+    { "text": "DNS poisoning", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A39, Page 77",
+  "details": "DNS poisoning redirects users to malicious IP addresses by corrupting DNS records."
+},
+{
+  "question": "Which of the following considerations are MOST commonly associated with a hybrid cloud model?",
+  "answers": [
+    { "text": "Microservice outages", "correct": false },
+    { "text": "IoT support", "correct": false },
+    { "text": "Network protection mismatches", "correct": true },
+    { "text": "Containerization backups", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A40, Page 78",
+  "details": "Hybrid cloud models often face mismatches in network protection between public and private environments."
+},
+{
+  "question": "A company hires a large number of seasonal employees, and their system access should normally be disabled when the employee leaves the company. The security administrator would like to verify that their systems cannot be accessed by any of the former employees. Which of the following would be the BEST way to provide this verification?",
+  "answers": [
+    { "text": "Confirm that no unauthorized accounts have administrator access", "correct": false },
+    { "text": "Validate the account lockout policy", "correct": false },
+    { "text": "Validate the offboarding processes and procedures", "correct": true },
+    { "text": "Create a report that shows all authentications for a 24-hour period", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A41, Page 79",
+  "details": "Validating offboarding ensures that former employees no longer have access to systems or data."
+},
+{
+  "question": "Which of the following is used to describe how cautious an organization might be to taking a specific risk?",
+  "answers": [
+    { "text": "Risk appetite", "correct": true },
+    { "text": "Risk register", "correct": false },
+    { "text": "Risk transfer", "correct": false },
+    { "text": "Risk reporting", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A42, Page 80",
+  "details": "Risk appetite defines the level of risk an organization is willing to accept in pursuit of its goals."
+},
+{
+  "question": "A technician is applying a series of patches to fifty web servers during a scheduled maintenance window. After patching and rebooting the first server, the web service fails with a critical error. Which of the following should the technician do NEXT?",
+  "answers": [
+    { "text": "Contact the stakeholders regarding the outage", "correct": false },
+    { "text": "Follow the steps listed in the backout plan", "correct": true },
+    { "text": "Test the upgrade process in the lab", "correct": false },
+    { "text": "Evaluate the impact analysis associated with the change", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A43, Page 81",
+  "details": "A backout plan provides a predefined method to revert changes when issues arise during deployment."
+},
+{
+  "question": "An attacker has discovered a way to disable a server by sending specially crafted packets from many remote devices to the operating system. When the packet is received, the system crashes and must be rebooted to restore normal operations. Which of the following would BEST describe this attack?",
+  "answers": [
+    { "text": "Privilege escalation", "correct": false },
+    { "text": "SQL injection", "correct": false },
+    { "text": "Replay attack", "correct": false },
+    { "text": "DDoS", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A44, Page 82",
+  "details": "Distributed Denial of Service (DDoS) attacks overwhelm systems with traffic, causing crashes or outages."
+},
+{
+  "question": "A data breach has occurred in a large insurance company. A security administrator is building new servers and security systems to get all of the financial systems back online. Which part of the incident response process would BEST describe these actions?",
+  "answers": [
+    { "text": "Lessons learned", "correct": false },
+    { "text": "Containment", "correct": false },
+    { "text": "Recovery", "correct": true },
+    { "text": "Analysis", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A45, Page 83",
+  "details": "Recovery involves restoring systems and operations after a security incident has been contained."
+},
+{
+  "question": "A network team has installed new access points to support an application launch. In less than 24 hours, the wireless network was attacked and private company information was accessed. Which of the following would be the MOST likely reason for this breach?",
+  "answers": [
+    { "text": "Race condition", "correct": false },
+    { "text": "Jailbreaking", "correct": false },
+    { "text": "Impersonation", "correct": false },
+    { "text": "Misconfiguration", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A46, Page 84",
+  "details": "Misconfigured access points can leave networks vulnerable to unauthorized access and data breaches."
+},
+{
+  "question": "An organization has identified a significant vulnerability in an Internet-facing firewall. The firewall company has stated the firewall is no longer available for sale and there are no plans to create a patch for this vulnerability. Which of the following would BEST describe this issue?",
+  "answers": [
+    { "text": "End-of-life", "correct": true },
+    { "text": "Improper input handling", "correct": false },
+    { "text": "Improper key management", "correct": false },
+    { "text": "Incompatible OS", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A47, Page 85",
+  "details": "End-of-life products no longer receive updates or support, making them vulnerable to exploitation."
+},
+{
+  "question": "A company has decided to perform a disaster recovery exercise during an annual meeting with the IT directors and senior directors. A simulated disaster will be presented, and the participants will discuss the logistics and processes required to resolve the disaster. Which of the following would BEST describe this exercise?",
+  "answers": [
+    { "text": "Capacity planning", "correct": false },
+    { "text": "Business impact analysis", "correct": false },
+    { "text": "Continuity of operations", "correct": false },
+    { "text": "Tabletop exercise", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A48, Page 86",
+  "details": "Tabletop exercises simulate scenarios to evaluate response plans and decision-making processes."
+},
+{
+  "question": "A security administrator needs to block users from visiting websites hosting malicious software. Which of the following would be the BEST way to control this access?",
+  "answers": [
+    { "text": "Honeynet", "correct": false },
+    { "text": "Data masking", "correct": false },
+    { "text": "DNS filtering", "correct": true },
+    { "text": "Data loss prevention", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A49, Page 87",
+  "details": "DNS filtering blocks access to known malicious domains by intercepting DNS queries."
+},
+{
+  "question": "A system administrator has been called to a system with a malware infection. As part of the incident response process, the administrator has imaged the operating system to a known-good version. Which of these incident response steps is the administrator following?",
+  "answers": [
+    { "text": "Lessons learned", "correct": false },
+    { "text": "Recovery", "correct": true },
+    { "text": "Detection", "correct": false },
+    { "text": "Containment", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A50, Page 88",
+  "details": "Restoring a system to a clean state is part of the recovery phase in incident response."
+},
+{
+  "question": "A company has placed a SCADA system on a segmented network with limited access from the rest of the corporate network. Which of the following would describe this process?",
+  "answers": [
+    { "text": "Load balancing", "correct": false },
+    { "text": "Least privilege", "correct": false },
+    { "text": "Data retention", "correct": false },
+    { "text": "Hardening", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A51, Page 89",
+  "details": "Hardening involves reducing vulnerabilities by limiting access and securing configurations, especially for critical systems like SCADA."
+},
+{
+  "question": "An administrator is viewing the following security log: UTC 04/05/2023 03:09:15809 AV Gateway Alert 136.127.92.171 80 -> 10.16.10.14 60818 Gateway Anti-Virus Alert: XPACK.A_7854 (Trojan) blocked. Which of the following can be observed from this log information?",
+  "answers": [
+    { "text": "The victim's IP address is 136.127.92.171", "correct": false },
+    { "text": "A download was blocked from a web server", "correct": true },
+    { "text": "A botnet DDoS attack was blocked", "correct": false },
+    { "text": "The Trojan was blocked, but the file was not", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A52, Page 90",
+  "details": "The log shows a Trojan download attempt from a web server that was successfully blocked."
+},
+{
+  "question": "A company is reviewing its access control policies and wants to ensure that users only have access to the resources necessary for their job roles. Which of the following principles should be implemented?",
+  "answers": [
+    { "text": "Separation of duties", "correct": false },
+    { "text": "Least privilege", "correct": true },
+    { "text": "Need to know", "correct": false },
+    { "text": "Role-based access control", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A53, Page 91",
+  "details": "Least privilege ensures users only have the minimum access required to perform their job functions."
+},
+{
+  "question": "A security administrator is configuring a firewall to block all traffic from a known malicious IP address. Which of the following types of control is being implemented?",
+  "answers": [
+    { "text": "Preventive", "correct": true },
+    { "text": "Detective", "correct": false },
+    { "text": "Corrective", "correct": false },
+    { "text": "Compensating", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A54, Page 92",
+  "details": "Preventive controls are designed to stop unwanted actions before they occur, such as blocking malicious traffic."
+},
+{
+  "question": "An organization is planning to implement a new security policy that requires all employees to use multifactor authentication when accessing sensitive systems. Which of the following would BEST support this policy?",
+  "answers": [
+    { "text": "Biometrics and password", "correct": true },
+    { "text": "Username and password", "correct": false },
+    { "text": "PIN and password", "correct": false },
+    { "text": "Security questions", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A55, Page 93",
+  "details": "Multifactor authentication requires two or more different types of authentication, such as biometrics and passwords."
+},
+{
+  "question": "A company is concerned about the possibility of an attacker gaining access to its internal network by exploiting a vulnerability in a third-party vendor’s system. Which of the following would BEST describe this type of risk?",
+  "answers": [
+    { "text": "Insider threat", "correct": false },
+    { "text": "Supply chain", "correct": true },
+    { "text": "Zero-day", "correct": false },
+    { "text": "Privilege escalation", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A56, Page 94",
+  "details": "Supply chain risks arise when vulnerabilities in third-party systems affect the security of your own network."
+},
+{
+  "question": "A user reports that their system is running slowly and they suspect malware. The security team investigates and finds that the system is using excessive CPU and memory resources. Which of the following would BEST describe this issue?",
+  "answers": [
+    { "text": "Race condition", "correct": false },
+    { "text": "Resource consumption", "correct": true },
+    { "text": "Memory injection", "correct": false },
+    { "text": "Privilege escalation", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A57, Page 95",
+  "details": "Malware can consume system resources, leading to performance degradation — a classic resource consumption issue."
+},
+{
+  "question": "A company is implementing a new policy that requires all employees to complete annual security awareness training. Which of the following types of control is being implemented?",
+  "answers": [
+    { "text": "Technical", "correct": false },
+    { "text": "Operational", "correct": true },
+    { "text": "Managerial", "correct": false },
+    { "text": "Physical", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A58, Page 96",
+  "details": "Operational controls include procedures and training that support security policies and awareness."
+},
+{
+  "question": "A company has implemented a system that automatically blocks access to websites known to host malware. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": false },
+    { "text": "DNS filtering", "correct": true },
+    { "text": "Firewall", "correct": false },
+    { "text": "Proxy server", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A59, Page 97",
+  "details": "DNS filtering blocks access to malicious domains by intercepting DNS queries before resolution."
+},
+{
+  "question": "A company is planning to implement a new backup strategy that includes storing data in multiple geographic locations. Which of the following would BEST describe this strategy?",
+  "answers": [
+    { "text": "Replication", "correct": true },
+    { "text": "Journaling", "correct": false },
+    { "text": "Encryption", "correct": false },
+    { "text": "Obfuscation", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A60, Page 98",
+  "details": "Replication involves copying data across multiple locations to ensure availability and redundancy."
+},
+{
+  "question": "A company is implementing a new policy that requires all employees to use a VPN when accessing internal resources remotely. Which of the following would BEST describe this requirement?",
+  "answers": [
+    { "text": "Least privilege", "correct": false },
+    { "text": "Defense in depth", "correct": false },
+    { "text": "Secure access", "correct": true },
+    { "text": "Zero trust", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A61, Page 99",
+  "details": "Requiring VPN access ensures secure remote connections, aligning with secure access principles."
+},
+{
+  "question": "A company is reviewing its incident response procedures and wants to ensure that all incidents are properly documented and analyzed after resolution. Which of the following phases would BEST support this goal?",
+  "answers": [
+    { "text": "Containment", "correct": false },
+    { "text": "Eradication", "correct": false },
+    { "text": "Recovery", "correct": false },
+    { "text": "Lessons learned", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A62, Page 100",
+  "details": "The lessons learned phase helps organizations improve future responses by analyzing past incidents."
+},
+{
+  "question": "A company has implemented a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A63, Page 101",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+},
+{
+  "question": "A company is planning to implement a new system that will automatically detect and block malicious activity on its network. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": false },
+    { "text": "IDS", "correct": false },
+    { "text": "IPS", "correct": true },
+    { "text": "Firewall", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A64, Page 102",
+  "details": "An Intrusion Prevention System (IPS) actively blocks malicious traffic, unlike IDS which only detects."
+},
+{
+  "question": "A company is reviewing its data classification policy and wants to ensure that sensitive data is only accessible to authorized users. Which of the following would BEST support this goal?",
+  "answers": [
+    { "text": "Encryption", "correct": false },
+    { "text": "Access control", "correct": true },
+    { "text": "Obfuscation", "correct": false },
+    { "text": "Data masking", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A65, Page 103",
+  "details": "Access control ensures that only authorized users can view or modify sensitive data."
+},
+{
+  "question": "A company is implementing a new system that will allow employees to use their smartphones to unlock doors in the office. Which of the following technologies would MOST likely be used?",
+  "answers": [
+    { "text": "RFID", "correct": false },
+    { "text": "NFC", "correct": true },
+    { "text": "Bluetooth", "correct": false },
+    { "text": "Wi-Fi", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A66, Page 104",
+  "details": "Near Field Communication (NFC) is commonly used for secure, short-range access control like door unlocking."
+},
+{
+  "question": "A company is planning to implement a new system that will monitor user activity and generate alerts for suspicious behavior. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": true },
+    { "text": "Firewall", "correct": false },
+    { "text": "Proxy", "correct": false },
+    { "text": "VPN", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A67, Page 105",
+  "details": "Security Information and Event Management (SIEM) systems aggregate logs and generate alerts for anomalies."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to authenticate using a one-time password sent via SMS. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": true },
+    { "text": "Something you are", "correct": false },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A68, Page 106",
+  "details": "Receiving a one-time password via SMS uses 'something you have' — the mobile device."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access multiple applications using a single set of credentials. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SSO", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "MFA", "correct": false },
+    { "text": "802.1X", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A69, Page 107",
+  "details": "Single Sign-On (SSO) allows users to authenticate once and access multiple systems without re-entering credentials."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access internal resources only if their devices meet certain security requirements. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "Posture assessment", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "SSO", "correct": false },
+    { "text": "MFA", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A70, Page 108",
+  "details": "Posture assessment checks device compliance before granting access to internal resources."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access internal resources only if their devices meet certain security requirements. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "Posture assessment", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "SSO", "correct": false },
+    { "text": "MFA", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A71, Page 109",
+  "details": "Posture assessment checks device compliance before granting access to internal resources."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access multiple applications using a single set of credentials. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SSO", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "MFA", "correct": false },
+    { "text": "802.1X", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A72, Page 110",
+  "details": "Single Sign-On (SSO) allows users to authenticate once and access multiple systems without re-entering credentials."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to authenticate using a one-time password sent via SMS. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": true },
+    { "text": "Something you are", "correct": false },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A73, Page 111",
+  "details": "Receiving a one-time password via SMS uses 'something you have' — the mobile device."
+},
+{
+  "question": "A company is planning to implement a new system that will monitor user activity and generate alerts for suspicious behavior. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": true },
+    { "text": "Firewall", "correct": false },
+    { "text": "Proxy", "correct": false },
+    { "text": "VPN", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A74, Page 112",
+  "details": "Security Information and Event Management (SIEM) systems aggregate logs and generate alerts for anomalies."
+},
+{
+  "question": "A company is implementing a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A75, Page 113",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+},
+{
+  "question": "A company is reviewing its incident response procedures and wants to ensure that all incidents are properly documented and analyzed after resolution. Which of the following phases would BEST support this goal?",
+  "answers": [
+    { "text": "Containment", "correct": false },
+    { "text": "Eradication", "correct": false },
+    { "text": "Recovery", "correct": false },
+    { "text": "Lessons learned", "correct": true }
+  ],
+  "reference": "Practice Exam A, Question A76, Page 114",
+  "details": "The lessons learned phase helps organizations improve future responses by analyzing past incidents."
+},
+{
+  "question": "A company is implementing a new policy that requires all employees to use a VPN when accessing internal resources remotely. Which of the following would BEST describe this requirement?",
+  "answers": [
+    { "text": "Least privilege", "correct": false },
+    { "text": "Defense in depth", "correct": false },
+    { "text": "Secure access", "correct": true },
+    { "text": "Zero trust", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A77, Page 115",
+  "details": "Requiring VPN access ensures secure remote connections, aligning with secure access principles."
+},
+{
+  "question": "A company is reviewing its data classification policy and wants to ensure that sensitive data is only accessible to authorized users. Which of the following would BEST support this goal?",
+  "answers": [
+    { "text": "Encryption", "correct": false },
+    { "text": "Access control", "correct": true },
+    { "text": "Obfuscation", "correct": false },
+    { "text": "Data masking", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A78, Page 116",
+  "details": "Access control ensures that only authorized users can view or modify sensitive data."
+},
+{
+  "question": "A company is planning to implement a new system that will automatically detect and block malicious activity on its network. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": false },
+    { "text": "IDS", "correct": false },
+    { "text": "IPS", "correct": true },
+    { "text": "Firewall", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A79, Page 117",
+  "details": "An Intrusion Prevention System (IPS) actively blocks malicious traffic, unlike IDS which only detects."
+},
+{
+  "question": "A company is planning to implement a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A80, Page 118",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access internal resources only if their devices meet certain security requirements. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "Posture assessment", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "SSO", "correct": false },
+    { "text": "MFA", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A81, Page 119",
+  "details": "Posture assessment checks device compliance before granting access to internal resources."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access multiple applications using a single set of credentials. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SSO", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "MFA", "correct": false },
+    { "text": "802.1X", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A82, Page 120",
+  "details": "Single Sign-On (SSO) allows users to authenticate once and access multiple systems without re-entering credentials."
+},
+{
+  "question": "A company is planning to implement a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A83, Page 121",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+},
+{
+  "question": "A company is planning to implement a new system that will monitor user activity and generate alerts for suspicious behavior. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": true },
+    { "text": "Firewall", "correct": false },
+    { "text": "Proxy", "correct": false },
+    { "text": "VPN", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A84, Page 122",
+  "details": "Security Information and Event Management (SIEM) systems aggregate logs and generate alerts for anomalies."
+},
+{
+  "question": "A company is implementing a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A85, Page 123",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to authenticate using a one-time password sent via SMS. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": true },
+    { "text": "Something you are", "correct": false },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A86, Page 124",
+  "details": "Receiving a one-time password via SMS uses 'something you have' — the mobile device."
+},
+{
+  "question": "A company is planning to implement a new system that will automatically detect and block malicious activity on its network. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SIEM", "correct": false },
+    { "text": "IDS", "correct": false },
+    { "text": "IPS", "correct": true },
+    { "text": "Firewall", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A87, Page 125",
+  "details": "An Intrusion Prevention System (IPS) actively blocks malicious traffic, unlike IDS which only detects."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access internal resources only if their devices meet certain security requirements. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "Posture assessment", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "SSO", "correct": false },
+    { "text": "MFA", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A88, Page 126",
+  "details": "Posture assessment checks device compliance before granting access to internal resources."
+},
+{
+  "question": "A company is planning to implement a new system that will allow users to access multiple applications using a single set of credentials. Which of the following would BEST describe this system?",
+  "answers": [
+    { "text": "SSO", "correct": true },
+    { "text": "Federation", "correct": false },
+    { "text": "MFA", "correct": false },
+    { "text": "802.1X", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A89, Page 127",
+  "details": "Single Sign-On (SSO) allows users to authenticate once and access multiple systems without re-entering credentials."
+},
+{
+  "question": "A company is planning to implement a new system that uses facial recognition to authenticate users. Which of the following authentication factors is being used?",
+  "answers": [
+    { "text": "Something you know", "correct": false },
+    { "text": "Something you have", "correct": false },
+    { "text": "Something you are", "correct": true },
+    { "text": "Somewhere you are", "correct": false }
+  ],
+  "reference": "Practice Exam A, Question A90, Page 128",
+  "details": "Facial recognition is a biometric method, which falls under 'something you are' authentication."
+}
+]

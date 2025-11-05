@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA Security+ Practice Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="exam-details">
+            <h1>CompTIA Security+ Practice Exam</h1>
+            <div class="timer-container">
+                <div id="timer">Time Remaining: 90:00</div>
+                <button id="pause-btn" class="pause-btn btn hide">Pause</button>
+            </div>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div id="score-container" class="hide">
+            <p>Correct: <span id="correct-score">0</span></p>
+            <p>Wrong: <span id="wrong-score">0</span></p>
+        </div>
+        <div id="incorrect-answers-container" class="hide"></div>
+    </div>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
