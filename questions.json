@@ -392,20 +392,24 @@
   },
   {
     "id": "A23",
-    "question": "A recent audit has found that existing password policies do not include a requirement for users to change their passwords after a certain period. Which of the following password policy elements is missing?",
+    "question": "A recent audit has found that existing password policies do not include any restrictions on password attempts, and users are not required to periodically change their passwords. Which of the following would correct these policy issues? (Select THREE)",
     "options": {
       "A": "Password complexity",
       "B": "Password expiration",
       "C": "Password reuse",
-      "D": "Account lockout"
+      "D": "Account lockout",
+      "E": "Password managers"
     },
-    "answer": "B",
+    "answer": ["B", "D"],
     "explanation": {
-      "correct": "Password expiration policies require users to change their passwords after a specified period, enhancing security by limiting the lifespan of a compromised password.",
+      "correct": {
+        "B": "Password expiration would require a password change after the expiration date.",
+        "D": "An account lockout would disable an account after a predefined number of unsuccessful login attempts."
+      },
       "incorrect": {
-        "A": "A complex password would make the password more difficult to brute force, but it doesn't address the need for periodic changes.",
-        "C": "Maintaining a password history would prevent the reuse of any previous passwords, but it doesn't enforce periodic password changes.",
-        "D": "Account lockout policies disable an account after a certain number of failed login attempts, preventing brute-force attacks, but it doesn't enforce periodic password changes."
+        "A": "A complex password would make the password more difficult to brute force, but it would not solve the issues listed in this question.",
+        "C": "Restricting password reuse ensures a different password is used each time, but it doesn't enforce expiration or lockout.",
+        "E": "Password managers securely store passwords but don't enforce expiration or lockout policies."
       }
     },
     "reference": {
@@ -1959,6 +1963,22 @@
     "type": "fill-in-the-blank",
     "question": "A user's workstation is running slowly and displaying pop-up ads. A security analyst suspects malware is present. The analyst should use the ______ command to view the system's active network connections and listening ports to identify any suspicious connections.",
     "answer": "netstat",
+    "explanation": {
+      "correct": "The netstat (network statistics) command is a universal command-line tool available on Windows, Linux, and macOS that provides information about active network connections, listening ports, and network interface statistics.\nBy using specific options with netstat (e.g., netstat -ano in Windows or netstat -anp in Linux), an analyst can see:\n\n    Foreign Addresses: The IP addresses the compromised machine is communicating with.\n    Ports: Which local and remote ports are being used.\n    State: The status of the connection (e.g., ESTABLISHED, LISTEN, CLOSE_WAIT).\n    PID/Executable Name: The Process ID (PID) or the actual program name associated with each connection, which helps pinpoint the malicious software in the Task Manager or system monitor. \n\nThis information allows the analyst to quickly identify unexpected outbound connections (Command and Control traffic) or unexpected listening ports (backdoors), which are key indicators of malware presence. This is a foundational concept in network troubleshooting and incident response covered in Professor Messer's Security+ materials."
+    },
+    "reference": {
+      "objective": "SY0-701, Objective 1.5 - Command-line Tools",
+      "link": "https://professormesser.link/701010501"
+    }
+  },
+  {
+    "id": "PBQ2",
+    "type": "fill-in-the-blank",
+    "question": "A user's workstation is running slowly and displaying pop-up ads. A security analyst suspects malware is present. The analyst should use the ______ command to view the system's active network connections and listening ports to identify any suspicious connections.",
+    "answer": "netstat",
+    "explanation": {
+      "correct": "The netstat (network statistics) command is a universal command-line tool available on Windows, Linux, and macOS that provides information about active network connections, listening ports, and network interface statistics.\nBy using specific options with netstat (e.g., netstat -ano in Windows or netstat -anp in Linux), an analyst can see:\n\n    Foreign Addresses: The IP addresses the compromised machine is communicating with.\n    Ports: Which local and remote ports are being used.\n    State: The status of the connection (e.g., ESTABLISHED, LISTEN, CLOSE_WAIT).\n    PID/Executable Name: The Process ID (PID) or the actual program name associated with each connection, which helps pinpoint the malicious software in the Task Manager or system monitor. \n\nThis information allows the analyst to quickly identify unexpected outbound connections (Command and Control traffic) or unexpected listening ports (backdoors), which are key indicators of malware presence. This is a foundational concept in network troubleshooting and incident response covered in Professor Messer's Security+ materials."
+    },
     "reference": {
       "objective": "SY0-701, Objective 1.5 - Command-line Tools",
       "link": "https://professormesser.link/701010501"
