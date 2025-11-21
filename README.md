@@ -1,8 +1,8 @@
 # CompTIA Security+ Practice Exam Simulator
 
-[![GitHub Pages](https://img.shields.io/badge/View-Demo-blue)](https://najibullahniazi6285-stack.github.io/Practice-exam/)
-![GitHub repo size](https://img.shields.io/github/repo-size/najibullahniazi6285-stack/Practice-exam)
-![GitHub stars](https://img.shields.io/github/stars/najibullahniazi6285-stack/Practice-exam?style=social)
+[![GitHub Pages](https://img.shields.io/badge/View-Demo-blue)](https://najeeb-sec.github.io/Practice-exam/)
+![GitHub repo size](https://img.shields.io/github/repo-size/najeeb-sec-stack/Practice-exam)
+![GitHub stars](https://img.shields.io/github/stars/najeeb-sec/Practice-exam?style=social)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Overview
@@ -12,7 +12,7 @@ This project is a web-based practice exam simulator for the **CompTIA Security+ 
 
 ## Live Demo
 Access the live application here:  
-👉 [CompTIA Security+ Practice Exam](https://najibullahniazi6285-stack.github.io/Practice-exam/)
+👉 [CompTIA Security+ Practice Exam](https://najeeb-sec.github.io/Practice-exam/)
 
 ---
 
@@ -39,7 +39,7 @@ Access the live application here:
 ### **Run Locally with Python HTTP Server**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/najibullahniazi6285-stack/Practice-exam.git
+   git clone https://github.com/najeeb-sec/Practice-exam.git
    cd Practice-exam
    ```
 
